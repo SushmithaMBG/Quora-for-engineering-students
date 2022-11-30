@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(360deg, rgba(70, 66, 58, 0.59) 3.49%, rgba(61, 59, 54, 0) 111.4%);  
+    background-size:cover;
+background-position: center;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+.menu-bar{
+    background: rgb(19, 21, 22);
+    text-align: center;
+}
+.menu-bar ul{  
+     display: inline-flex;
+    list-style: none;
+    color: aquamarine;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 25px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:rgb(246, 244, 248);
+}
+.menu, .menu-bar ul li:hover{
+    background: #0aa6e4;
+    border-radius: 3px;
+}
+
+.sub-about{
+    display: none;
+}
+.menu-bar ul li:hover .sub-about{
+    display: block;
+    position: absolute;
+    background: #0b394b;
+    margin-top: 15px;
+}
+.menu-bar ul li:hover .sub-about ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-about ul li{
+width: 150px;
+padding: 2px;
+border-bottom: 1px dotted #fff;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+.menu-bar ul li:hover .sub-about ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-about ul li a:hover{
+    color: rgb(93, 144, 240);
+}
+
+
+.sub-signin{
+    display: none;
+}
+.menu-bar ul li:hover .sub-signin{
+    display: block;
+    position: absolute;
+    background: #0b394b;
+    margin-top: 15px;
+}
+.menu-bar ul li:hover .sub-signin ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-signin ul li{
+width: 200px;
+padding: 1px;
+background: transparent;
+border-radius: 0;
+text-align: center;
+}
+.menu-bar ul li:hover .sub-signin ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-signin ul li a:hover{
+    color: rgb(93, 144, 240);
+}
+
+
+
+.sub-login{
+    display: none;
+}
+.menu-bar ul li:hover .sub-login{
+    display: block;
+    position: absolute;
+    background: #0b394b;
+    margin-top: 15px;
+}
+.menu-bar ul li:hover .sub-login ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-login ul li{
+width: 200px;
+padding: 1px;
+background: transparent;
+border-radius: 0;
+text-align: center;
+}
+.menu-bar ul li:hover .sub-login ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-login ul li a:hover{
+    color: rgb(93, 144, 240);
+}
+
+
+#box1{
+    background: linear-gradient(180deg, #252525 43.75%, rgba(90, 84, 84, 0.818) 98.75%, rgba(157, 121, 121, 0.0885417) 99.99%, rgba(0, 0, 0, 0.698049) 100%, rgba(0, 0, 0, 0.261265) 100%, rgba(0, 0, 0, 0.23088) 100%, rgba(31, 24, 24, 0) 100%);
+    border-radius: 0px;
+    height:200px;
+    width:400px;
+    text-align: center;
+        font-weight: 300;
+        font-size: 1rem;
+        color: rgb(253, 253, 253);
+        font-family: sans-serif;
+        margin-left: 4rem;
+}
+
+#box2{
+    background: linear-gradient(360deg, rgba(103, 90, 65, 0.59) 3.49%, rgba(133, 121, 101, 0) 111.4%);
+    border-radius: 0px;
+    height:200px;
+    text-align: center;
+    width:400px;
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(253, 253, 253);
+    font-family: sans-serif;
+    margin-left: 4rem;
+}
+
+.click{
+    text-align: left;
+    margin-left: 70rem;
+}
+
+.click1{
+    text-align: left;
+    margin-left: 75rem;;
+    margin-bottom: 3rem;
+}
+
+.voting{
+
+    position: relative;
+    border-radius: 4px;
+    padding: 3px;
+    display: flex;
+    justify-content: right;
+    justify-content: top;
+    margin-right: 5rem;
+}
+
+button{
+    color:black;
+    background: none;
+    font-size: 20px;
+    padding: 0 2px;
+    margin: 10px 0;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+ button:active{
+    color: #004eff;
+    transform: scale(1.2);
+ }
+ 
+
+
+.search-box{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 5 6px;
+}
+
+.search-btn{
+    color: #61433b;
+    float: right;
+    width: 30px;
+    height: 21px;
+    border-radius: 40%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
