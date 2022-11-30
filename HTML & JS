@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Project
+      </title>
+      <link rel="Stylesheet" href="styles3.css">
+    </head>
+<body>
+    
+<div class="menu-bar">
+    <ul>
+        <li class="menu"><h1><a href="#"><ion-icon name="menu-outline"></a></h1></ion-icon></li>
+        <li class="home"><a href="#">Home</a></li>
+    <li><a href="#">About us</a>
+        <div class="sub-about">
+        <ul>
+             <li><a href="#">mission</a></li>
+             <li><a href="#">vision</a></li>
+             <li><a href="#">team</a></li>
+        </ul>
+        </div>   
+    </li>
+    <li class="signin"><a href="#">Sign in</a>
+        <div class="sub-signin">
+        <ul>
+            <form>
+                <li><form id="login" class="input-group-login"></li>
+                <li><input type="text"class="input-field"placeholder="First name" required></li>
+                <li><input type="text"class="input-field"placeholder="Last name" required></li>
+                <li><input type="text"class="input-field"placeholder="Email Id" required> </li>
+                <li><input type="password" class="input-field" placeholder="Enter password" required></li>
+                <li><input type="chekbox"class="chek-box"placeholder="Confirm password" required></li>
+                <li><button type="submit"class="submit-btn">Sign in</button></li>
+            </form>
+        </ul>
+        </div> 
+    </li>
+    <li><a href="#">Login</a>
+            <div class="sub-login">
+            <ul>
+                <form>
+                    <li><form id="login" class="input-group-login"></li>
+                    <li><input type="text"class="input-field"placeholder="Email Id" required> </li>
+                    <li><input type="password" class="input-field" placeholder="Enter password" required></li>
+                    <li><input type="chekbox"class="chek-box"placeholder="Confirm password" required></li>
+                    <li><button type="submit"class="submit-btn">Login</button></li>
+                </form>
+            </ul>
+            </div>
+    </li>
+
+    </ul>
+</div>
+
+<div class="search-box">
+<input class="searc-txt" type="text" name="" placeholder="Type to search">
+<a class="search-btn" href="#">
+    <ion-icon name="search-outline"></ion-icon>
+
+</a>
+</div>
+<br><br><br>
+<div id="box1">
+    <br><div class="icon"><h1><ion-icon name="search-outline"></ion-icon></h1></div>
+    <p id="text"><h2> Find the best answer to your Question,help others.</h2></p> 
+        <br><br><button class="browse"><h5>Browse</h5></button>
+</div>
+<br><br><br>
+<div id="box2">
+    <br><div class="icon"><h1><ion-icon name="lock-closed-outline"></ion-icon></h1></div>
+    <p id="text"><h2> Want a secure, private space for your technical knowledge.</h2></p>
+   <br><br><button class="Team"><h5>Discover teams</h5></button>
+</div>
+
+
+
+    <div class="voting">
+    <button id="likebtn">
+       <ion-icon name="thumbs-up-outline"></ion-icon>
+    </button>
+   <h1><input type="number"id="input1" value="0" name=""></h1>
+    <button id="dislike">
+      <ion-icon name="thumbs-down-outline"></ion-icon>
+</button>
+<h1><input type="number"id="input2" value="0" name=""></h1>
+</div>
+
+<script src="scripts1.js"></script>
+<script type="text/javascript">
+    let likebtn=document.querySelector('#likebtn');
+    let dislike=document.querySelector('#dislike');
+    let input1=document.querySelector('#input1');
+    let input2=document.querySelector('#input2');
+
+    likebtn.addEventListener('click',()=>{
+        input1.value=parseInt(input1.value)+1;
+        input1.style.color="#12ff00";
+    })%
+    dislike.addEventListener('click',()=>{
+        input2.value=parseInt(input2.value)+1;
+        input2.style.color="#ff0000";
+    })
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+    </html>
+
